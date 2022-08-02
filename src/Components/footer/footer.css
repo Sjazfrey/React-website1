@@ -1,0 +1,34 @@
+.footerbelow {
+    background-color: #2280ec88;
+    height: 150px;
+}
+
+.icon {
+    float: right;
+    margin: 0 155px 0 0;
+}
+
+.linkin {
+    font-size: 30px;
+}
+
+.icon2 {
+    font-size: 24px;
+    margin-left: 590px;
+}
+
+footer {
+    padding-top: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon2 {
+        font-size: 1.5em;
+        margin: 0 0 0 3em;
+        font-weight: bold;
+    }
+
+    .icon {
+        margin: 0 3em 0 4em;
+    }
+}

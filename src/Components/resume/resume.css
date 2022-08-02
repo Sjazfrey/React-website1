@@ -1,0 +1,15 @@
+.resumepage {
+    min-width: 100vw;
+    height: 20rem;
+}
+
+::-webkit-scrollbarY {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .resumepage {
+        min-width: 100vw;
+        height: 20rem;
+    }
+}

@@ -1,0 +1,108 @@
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  padding: 1em 2em;
+}
+.my-card:hover{
+  transform: rotateY(180deg);
+}
+
+.my-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  padding: 1.5em;
+  box-shadow: 0 4px 18px 0 rgb(237, 237, 237);
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d; 
+}
+
+.item1 {
+  grid-column-end: span 3;
+  box-shadow: 0 4px 18px 0 rgb(237, 237, 237);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  padding: 1em;
+}
+
+.item8 {
+  grid-column-end: span 3;
+  box-shadow: 0 4px 18px 0 rgb(237, 237, 237);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  padding: 1em;
+  margin-top: -1em;
+}
+
+.cardtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.my-card .front:hover {
+  transform: rotateY(180deg);
+} 
+
+.my-card .front::before, .my-card .back::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  left: -10px;
+}
+
+.my-card .front::after, .my-card .back::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  right: -10px;
+}
+
+.front{
+  display: flex;
+  justify-content: center;  
+  backface-visibility: hidden;
+  position: relative;
+  z-index: 2;
+  transform: rotateY(0deg);
+  overflow: hidden;
+  font-size: 1.5em;
+  font-weight: bold; 
+}
+
+.back {
+  transform: rotateY(-180deg);
+  position: relative;
+  backface-visibility: hidden;
+  margin-top: -2em;
+}
+
+.title {
+  margin-left: 2em;
+  font-size: 1.5em;
+  padding-top: .5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: block;
+    padding: 1em .5em 1em 0;
+  }
+
+  .grid-container div {
+    margin-bottom: 1em;
+  }
+
+  .title {
+    margin-left: 1em;
+    font-size: 1.5em;
+    padding-top: .5em;
+  }
+}

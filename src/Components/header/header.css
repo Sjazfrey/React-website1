@@ -1,0 +1,39 @@
+.imgpic {
+   min-width: 100vw;
+   height: 20rem;
+}
+
+.name {
+   color: #ffffff;
+}
+
+.head {
+   position: absolute;
+   top: 2em;
+   left: 1em;
+   font-size: 4rem;
+   font-weight: 500;
+   line-height: 1em;
+   color: #313030
+}
+
+.subhead {
+   position: absolute;
+   top: 7em;
+   left: 4em;
+   font-size: 2rem;
+   line-height: 1em;
+   color: #4b4949;
+}
+
+@media only screen and (max-width: 600px) {
+   .head {
+      top: 3.5em;
+      font-size: 2.5rem;
+   }
+   .subhead {
+      top: 8.5em;
+      font-size: 2rem;
+      left: 2em;
+   }
+}
